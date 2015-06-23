@@ -4,7 +4,21 @@ Brady Salz
 6/22/15
 """
 
-
-
 import praw
-import BeautifulSoup4 as bs4
+import bs4
+import time
+import os
+
+# silly windows problems
+try:
+    from config import *
+    import RedditBot
+
+except ImportError: 
+    os.chdir(r'C:\Users\Brady\Documents\GitHub\DCI-Scores-Bot')
+    from config import *
+    import RedditBot
+
+test = RedditBot.RedditBot()
+print dir(test)
+x = test.printStuff()
