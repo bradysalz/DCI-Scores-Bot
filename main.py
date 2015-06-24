@@ -21,4 +21,8 @@ except ImportError:
 
 test = RedditBot.RedditBot()
 print dir(test)
-x = test.printStuff()
+x = test.getRedditor('dynerthebard')
+lst = x.get_comments()
+
+for i in lst:
+    print i

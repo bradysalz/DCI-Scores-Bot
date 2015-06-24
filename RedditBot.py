@@ -13,4 +13,3 @@ class RedditBot:
 
     def getRedditor(self, username):
         return self.__conn__.get_redditor(username)
-
