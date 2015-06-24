@@ -4,25 +4,13 @@ Brady Salz
 6/22/15
 """
 
-import praw
-import bs4
 import time
-import os
+import RedditBot
+import WebCrawler
 
-# silly windows problems
-try:
-    from config import *
-    import RedditBot
+# test = RedditBot.RedditBot()
+# test.post_thread('ExplainLikeImConnie', 'Test Post Please Ignore', 'I L L\n\nI N I')
 
-except ImportError: 
-    os.chdir(r'C:\Users\Brady\Documents\GitHub\DCI-Scores-Bot')
-    from config import *
-    import RedditBot
-
-test = RedditBot.RedditBot()
-print dir(test)
-x = test.getRedditor('dynerthebard')
-lst = x.get_comments()
-
-for i in lst:
-    print i
+test = WebCrawler.WebCrawler()
+print dir(test.pages)
+# print test.resources
