@@ -6,5 +6,7 @@ class WebCrawler:
     Saves scores to local database
     """
     def __init__(self):
-        ghost = ghost.Ghost()
-        self.pages, self.resources = ghost.open('http://bradysalz.com')
+        myGhost = ghost.Ghost(wait_timeout=5)
+        url = 'http://www.bradysalz.com/'
+        self.pages, self.resources = myGhost.open(url)
+

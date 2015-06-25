@@ -12,5 +12,10 @@ import WebCrawler
 # test.post_thread('ExplainLikeImConnie', 'Test Post Please Ignore', 'I L L\n\nI N I')
 
 test = WebCrawler.WebCrawler()
-print dir(test.pages)
+for att in dir(test.pages):
+    if att[0] != '_':
+        print att
+
+print test.pages.http_status
+print test.pages.url
 # print test.resources

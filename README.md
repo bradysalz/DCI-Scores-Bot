@@ -2,7 +2,7 @@
 A python wrapper for ![DCI](http://www.dci.org) that posts the most recent scores to reddit. 
 
 ## TODO
-- [ ] Write bot that can post to reddit
+- [x] Write bot that can post to reddit
 - [ ] Check DCI scores every two minutes
 	- [ ] Learn how to use Ghost.py
 	- [ ] Save shows to DB
