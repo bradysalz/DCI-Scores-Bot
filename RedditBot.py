@@ -8,7 +8,6 @@ class RedditBot:
         # <platform>:<app ID>:<version string> (by /u/<reddit username>)
         self.__agent__ = 'python:dci-scores-tracker:1.0 (by /u/dynerthebard)'
         self.__conn__ = praw.Reddit(user_agent=self.__agent__)
-        # self.__conn__.login(username, password)
         self.__conn__.login(username, password, disable_warning=True)
         print self.__conn__
 
