@@ -48,17 +48,78 @@ class WebCrawler:
         r = requests.get(recap_url)
         page = bs4.BeautifulSoup(r.content, 'html5lib')
 
+        # get basic show info
+        header = page.body.find_all('table')[0]
+        show_name = header.tbody.tr.td.next_sibling.next_sibling.contents[1].string
+        show_date = header.tbody.tr.td.next_sibling.next_sibling.contents[5].string
+
         chief_judge = page.body.find_all("div", class_="chiefJudge")[0].contents[0][13:]
 
         score_table = page.body.find_all('table')[1]
         class_type = score_table.tbody.tr.td.contents[0]
 
+        score_table = score_table.tbody.find_all('tr')[1].td.table.tbody
 
-        print chief_judge, class_type
+        # get categories
+        categories = score_table.tr
+        category_list = []
+        for cat in categories:
+            if cat.string != u'\n' and cat.string != u'\xa0':
+                category_list.append(cat.string)
+
+        # get judges
+        judges = categories.next_sibling
+        judge_list = []
+        for judge in judges:
+            if judge.string != u'\n':
+                judge_list.append(judge.string)
+
+        # get scores
+        corps_list = []
+        subcaption_list = []
+        caption_total_list = []
+        penalty_list = []
+        total_list = []
+
+        for row in score_table.find_all('tr', recursive=False)[3:]:
+            corps_name =  row.td.string
+            corps_list.append(corps_name)
+
+            subcaptions = row.find_all('td', class_='subcaptionTotal')
+            subcaptions = [sb.table.tr.td.string for sb in subcaptions]
+            subcaption_list.append(subcaptions)
+
+            caption_total = row.find_all('td', class_='categoryTotal')
+            caption_total = [ct.table.tr.td.string for ct in caption_total]
+            caption_total_list.append(caption_total)
+
+            penalty = row.find_all('td', recursive=False)[-2].table.tbody.tr.td.string
+            penalty_list.append(penalty)
+
+            total = row.find_all('td', recursive=False)[-1].table.tbody.tr.td.string
+            total_list.append(total)
 
 
+        print subcaptions
+        print caption_total
+        print total_list
+
+        print show_date, show_name
+
+        show = {
+            "name" : show_name,
+            "date" : show_date,
+            "judge" : chief_judge,
+            "judges" : judge_list,
+            "class" : class_type,
+            "categories" : category_list,
+            "corps" : corps_list,
+            "subcaptions" : subcaption_list,
+            "captions" : caption_total,
+            "penalties" : penalty_list,
+            "totals" : total_list
+        }
 
 
-
-
+        return show
 
