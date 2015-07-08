@@ -44,3 +44,7 @@ Temporary Items
 
 # Local configuration files
 config.py
+
+# Extra Things
+*.pyc
+.idea/

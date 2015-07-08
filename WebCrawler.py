@@ -1,5 +1,8 @@
-import requests
 import json
+
+import requests
+import bs4
+
 
 class WebCrawler:
     """
@@ -37,6 +40,24 @@ class WebCrawler:
             recaps.append(round['recapUrl'])
 
         return recaps
+
+    def is_show_in_list(self, show_id):
+        pass
+
+    def parse_recap_table(self, recap_url):
+        r = requests.get(recap_url)
+        page = bs4.BeautifulSoup(r.content, 'html5lib')
+
+        chief_judge = page.body.find_all("div", class_="chiefJudge")[0].contents[0][13:]
+
+        score_table = page.body.find_all('table')[1]
+        class_type = score_table.tbody.tr.td.contents[0]
+
+
+        print chief_judge, class_type
+
+
+
 
 
 

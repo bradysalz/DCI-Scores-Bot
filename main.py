@@ -4,12 +4,11 @@ Brady Salz
 6/22/15
 """
 
-import time
-import RedditBot
 from WebCrawler import WebCrawler
 
 test = WebCrawler()
-test.update_scores_to_list()
+test.parse_recap_table('http://recaps.competitionsuite.com/42cdb67a-71d3-4b42-b5ca-803ea3c10404.htm')
+
 
 # test = RedditBot.RedditBot()
 # test.post_thread('ExplainLikeImConnie', 'Test Post Please Ignore', 'I L L\n\nI N I')
