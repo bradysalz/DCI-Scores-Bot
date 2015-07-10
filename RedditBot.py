@@ -1,5 +1,7 @@
 import praw
 
+from config import username, password
+
 
 class RedditBot():
     """Bot that browses reddit"""
@@ -9,7 +11,7 @@ class RedditBot():
         # <platform>:<app ID>:<version string> (by /u/<reddit username>)
         self.__agent__ = 'python:dci-scores-tracker:1.0 (by /u/dynerthebard)'
         self.__conn__ = praw.Reddit(user_agent=self.__agent__)
-        # self.__conn__.login(username, password, disable_warning=True)
+        self.__conn__.login(username, password, disable_warning=True)
         self.subreddit = subreddit
         # print self.__conn__
 
@@ -19,8 +21,8 @@ class RedditBot():
     def get_redditor(self, username):
         return self.__conn__.get_redditor(username)
 
-    def post_thread(self, subreddit, title, body):
-        self.__conn__.submit(subreddit, title, body)
+    def post_thread(self, title, body):
+        self.__conn__.submit(self.subreddit, title, body)
 
     def get_footer(self):
         return (
@@ -34,8 +36,10 @@ class RedditBot():
         text += '##' + show['date'] + '\n##Judged by ' + show['judge']
         text += self.get_spacer()
 
-        temp_row = show['categories']
-        temp_row.insert(0, '| ')
+        # print show['categories']
+        temp_row = [r for r in show['categories'] if r != u'\n\n']
+        temp_row.insert(0, '|'+show['class'])
+        temp_row.append('Total')
         text += self.append_row(temp_row)
 
         col_cnt = len(temp_row)
@@ -44,22 +48,24 @@ class RedditBot():
             temp_row += '--|'
         text += temp_row + '\n'
 
-        temp_row = show['judges']
+        temp_row = [j for j in show['judges'] if j != '\n\n']
         temp_row.insert(0, '|Judges')
         text += self.append_row(temp_row)
 
         for i in xrange(len(show['corps'])):
             temp_row = show['corps'][i] + '|'
             temp_row += '|'.join(show['subcaptions'][i])
-            temp_row += '|' +  show['totals'][i]
+            temp_row += '|' +  '**'+show['totals'][i]+'**'
             temp_row += '\n'
             text += temp_row
 
-        text += self.get_spacer()
-        text += self.get_footer()
+        text += '\n\nFull recap available [here]({0})\n\n'.format(show['url'])
+        text += '\n'
 
         with open('redditoutput.text', 'wb') as f:
             f.write(text)
+
+        return text
 
     def append_row(self, row):
         output = ''
@@ -76,5 +82,3 @@ class RedditBot():
 
 -----
 &nbsp;\n\n'''
-
-
