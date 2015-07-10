@@ -31,12 +31,17 @@ class ListManager:
             shows = [crawler.parse_recap_table(r) for r in recaps]
             bodies = [bot.parse_show_to_table(s) for s in shows]
 
-            single_body = '\n\n'.join(bodies)
+            single_body = bot.get_header(shows[0])
+            single_body += '\n\n'.join(bodies)
             single_body += bot.get_footer()
+
+            with open('redditoutput.text', 'wb') as f:
+                f.write(single_body)
 
             post_title = curr_show[0] + ' Scores'
             print post_title
-            # bot.post_thread(post_title, single_body)
+
+            bot.post_thread(post_title, single_body)
 
             with file('postlist.csv', 'rb') as original: orig = original.read()
             with file('postlist.csv', 'wb') as modified: modified.write(', '.join(curr_show) + '\n' + orig)
@@ -45,9 +50,6 @@ class ListManager:
             print last_show[show_cnt]
             show_cnt += 1
 
-        else:
-            print last_show[show_cnt]
-            print last_post
         show_file.close()
         post_file.close()
 

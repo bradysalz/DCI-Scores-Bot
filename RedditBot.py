@@ -32,10 +32,7 @@ class RedditBot():
             "*Hope you enjoy!*")
 
     def parse_show_to_table(self, show):
-        text = '###' + show['name'] + '\n\n'
-        text += '##' + show['date'] + '\n##Judged by ' + show['judge']
-        text += self.get_spacer()
-
+        text = ''
         # print show['categories']
         temp_row = [r for r in show['categories'] if r != u'\n\n']
         temp_row.insert(0, '|'+show['class'])
@@ -62,9 +59,12 @@ class RedditBot():
         text += '\n\nFull recap available [here]({0})\n\n'.format(show['url'])
         text += '\n'
 
-        with open('redditoutput.text', 'wb') as f:
-            f.write(text)
+        return text
 
+    def get_header(self, show):
+        text = '###' + show['name'] + '\n\n'
+        text += '##' + show['date'] + '\n##Judged by ' + show['judge']
+        text += self.get_spacer()
         return text
 
     def append_row(self, row):
