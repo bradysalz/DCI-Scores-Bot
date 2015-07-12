@@ -1,5 +1,8 @@
+import time
+
 from WebCrawler import WebCrawler
 from RedditBot import RedditBot
+
 
 class ListManager:
     """
@@ -29,25 +32,29 @@ class ListManager:
 
             recaps = crawler.get_show_recap_url(curr_show[2])
             shows = [crawler.parse_recap_table(r) for r in recaps]
-            bodies = [bot.parse_show_to_table(s) for s in shows]
+            bodies = [bot.parse_show_to_post(s) for s in shows]
 
             single_body = bot.get_header(shows[0])
             single_body += '\n\n'.join(bodies)
+            single_body += bot.get_legend()
             single_body += bot.get_footer()
 
             with open('redditoutput.text', 'wb') as f:
                 f.write(single_body)
 
             post_title = curr_show[0] + ' Scores'
-            print post_title
 
             bot.post_thread(post_title, single_body)
 
-            with file('postlist.csv', 'rb') as original: orig = original.read()
-            with file('postlist.csv', 'wb') as modified: modified.write(', '.join(curr_show) + '\n' + orig)
+            with file('postlist.csv', 'rb') as original:
+                orig = original.read()
+            with file('postlist.csv', 'wb') as modified:
+                modified.write(', '.join(curr_show) + '\n' + orig)
 
-            print 'added new show'
-            print last_show[show_cnt]
+            with open('logging.txt', 'ab') as log:
+                log.write('added new show on {0}\n'.format(time.time()))
+                log.write(last_show[show_cnt])
+
             show_cnt += 1
 
         show_file.close()

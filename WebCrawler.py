@@ -11,7 +11,7 @@ class WebCrawler:
     Should/will update to a database later
     """
     def __init__(self):
-        print 'init'
+        pass
 
     def update_show_list(self):
         competitions_url = "http://bridge.competitionsuite.com/api/orgscores/GetCompetitionsByOrganization/jsonp"
