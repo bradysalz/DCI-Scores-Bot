@@ -16,8 +16,8 @@ class RedditBot():
         self.subreddit = subreddit
         self.replacements = {
             'General Effect ': 'GE',
-            'Visual Proficiency': 'VA',
-            'Visual Analysis': 'VA',
+            'Visual Proficiency': 'VP',
+            'Visual - Analysis': 'VA',
             'Music - Brass': 'MB',
             'Music - Analysis': 'MA',
             'Music - Percussion': 'MP',
