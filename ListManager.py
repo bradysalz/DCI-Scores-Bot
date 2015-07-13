@@ -47,6 +47,7 @@ class ListManager:
                 bot.post_thread(post_title, single_body)
 
                 with open('logging.txt', 'ab') as log:
+                    print 'new show' 
                     log.write('added new show on {0}\n'.format(datetime.now()))
                     log.write(show + '\n')
 

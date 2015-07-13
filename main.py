@@ -16,3 +16,5 @@ updater.diff_show_post_lists()
 
 with open('logging.txt', 'a') as f:
     f.write("cron'd at {0}\n".format(datetime.datetime.now()))
+
+print "cron'd at {0}\n".format(datetime.datetime.now())
