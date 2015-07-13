@@ -1,15 +1,25 @@
 # DCI Scores Bot
 A python wrapper for [DCI](http://www.dci.org) that posts the most recent scores to reddit. 
 
+## To install
+Clone the repo and install the requirements.
+
+    pip install -r requirements.txt
+    
+Create a `config.py` file that has two values:
+* `username` = reddit username
+* `password` = reddit password
+
+Run `main.py` (presumably in a cron job)
+
 ## TODO
 - [x] Write bot that can post to reddit
-- [ ] Check DCI scores every two minutes
-	- [ ] Learn how to use Ghost.py
+- [x] Check DCI scores every two minutes
 	- [ ] Save shows to DB
-- [ ] Parse DCI Scores
-	- [ ] Check if new show
+- [x] Parse DCI Scores
+	- [x] Check if new show
 	- [ ] Parse to DB
-	- [ ] Parse to reddit
+	- [x] Parse to reddit
 	- [ ] Parse to website
-- [ ] Submit to /r/DCI
+- [x] Submit to [/r/drumcorps](www.reddit.com/r/drumcorps)
 
