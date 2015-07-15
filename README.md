@@ -21,5 +21,5 @@ Run `main.py` (presumably in a cron job)
 	- [ ] Parse to DB
 	- [x] Parse to reddit
 	- [ ] Parse to website
-- [x] Submit to [/r/drumcorps](www.reddit.com/r/drumcorps)
+- [x] Submit to [/r/drumcorps](http://www.reddit.com/r/drumcorps)
 
