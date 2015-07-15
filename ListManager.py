@@ -1,6 +1,5 @@
 from datetime import datetime
-import time
-
+from time import sleep, strptime, strftime
 from WebCrawler import WebCrawler
 from RedditBot import RedditBot
 
@@ -42,7 +41,9 @@ class ListManager:
                 with open('redditoutput.text', 'wb') as f:
                     f.write(single_body)
 
-                post_title = curr_show[0] + ' Scores'
+                time_obj = strptime(curr_show[1][:10], '%Y-%m-%d')
+                time_str = strftime('%m/%d/%y', time_obj)
+                post_title = time_str + ' Scores: ' + curr_show[0]
 
                 bot.post_thread(post_title, single_body)
 
@@ -51,7 +52,7 @@ class ListManager:
                     log.write('added new show on {0}\n'.format(datetime.now()))
                     log.write(show + '\n')
 
-                time.sleep(5*60) # reddit post timeout?
+                sleep(60) # reddit post timeout?
 
         with open('postlist.csv', 'wb') as p:
             p.write('\n'.join(show_list))
