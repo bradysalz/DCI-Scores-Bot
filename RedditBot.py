@@ -98,9 +98,14 @@ class RedditBot():
         return pattern.sub(lambda m: rep[re.escape(m.group(0))], cap_str)
 
     def get_legend(self):
-        legend = ''
-        for k, v in self.replacements.iteritems():
-            legend += k + ' = ' + v + '\n\n'
+        legend =  'GE -> General Effect\n\n'
+        legend += 'VP -> Visual Proficiency\n\n'
+        legend += 'VA -> Visual Analysis\n\n'
+        legend += 'CG -> Color Guard\n\n'
+        legend += 'MB -> Music - Brass\n\n'
+        legend += 'MA -> Music - Analysis\n\n'
+        legend += 'MP -> Music - Percussion\n\n'
+        legend += 'P -> Penalties\n\n'
 
         return legend
 
