@@ -24,7 +24,8 @@ class WebCrawler:
 
         with open('showlist.csv','wb') as f:
             for comp in scores_dict['competitions']:
-                line = ', '.join([comp['name'], comp['competitionDate'], comp['competitionGuid']])
+                clean_name = comp['name'].replace(',', '')
+                line = ', '.join([clean_name, comp['competitionDate'], comp['competitionGuid']])
                 f.write(line)
                 f.write('\n')
 

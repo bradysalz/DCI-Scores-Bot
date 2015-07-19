@@ -1,5 +1,6 @@
 from datetime import datetime
 from time import sleep, strptime, strftime
+
 from WebCrawler import WebCrawler
 from RedditBot import RedditBot
 
@@ -48,7 +49,7 @@ class ListManager:
                 bot.post_thread(post_title, single_body)
 
                 with open('logging.txt', 'ab') as log:
-                    print 'new show' 
+                    print 'new show' + curr_show[0]
                     log.write('added new show on {0}\n'.format(datetime.now()))
                     log.write(show + '\n')
 
