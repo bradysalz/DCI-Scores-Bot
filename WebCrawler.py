@@ -51,7 +51,10 @@ class WebCrawler:
         show_name = header.tbody.tr.td.next_sibling.next_sibling.contents[1].string
         show_date = header.tbody.tr.td.next_sibling.next_sibling.contents[5].string
 
-        chief_judge = page.body.find_all("div", class_="chiefJudge")[0].contents[0][13:]
+        try:
+            chief_judge = page.body.find_all("div", class_="chiefJudge")[0].contents[0][13:]
+        except IndexError:
+            chief_judge = 'No Head Judge'
 
         score_table = page.body.find_all('table')[1]
         class_type = score_table.tbody.tr.td.contents[0]

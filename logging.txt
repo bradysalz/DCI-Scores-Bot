@@ -649,3 +649,89 @@ cron'd at 2015-07-13 11:49:01.670960
 cron'd at 2015-07-13 11:50:02.114490
 cron'd at 2015-07-13 11:51:01.405908
 cron'd at 2015-07-13 11:52:01.822858
+added new show on 2015-07-19 00:57:02.723000
+Fiesta De Musica, 2015-07-18T09:00:00, 4691ea20-c9d5-4aa2-b384-3caa5932d3d7
+added new show on 2015-07-26 09:07:39.312000
+DCI Atlanta Southeastern Championship, 2015-07-25T09:00:00, bb03aee7-e890-4314-98d7-a72ed2f72038
+added new show on 2015-07-26 09:08:16.782000
+DCI Atlanta Southeastern Championship, 2015-07-25T09:00:00, bb03aee7-e890-4314-98d7-a72ed2f72038
+added new show on 2015-07-26 09:08:17.852000
+Shadow Showcase, 2015-07-25T09:00:00, 14f9bec0-7cc5-4728-88f0-f0890fdb420f
+added new show on 2015-07-26 09:08:19.161000
+Hamilton Drum Corps Classic, 2015-07-25T09:00:00, cdea6a9f-1165-47df-9df7-fc69dde75689
+added new show on 2015-07-26 09:08:20.329000
+Petunia City Brass, 2015-07-24T09:00:00, fe9f49e1-3aa7-4e8f-8b62-45618227e498
+added new show on 2015-07-26 09:08:21.965000
+The Masters of the Summer Music Games, 2015-07-24T09:00:00, 9957a0a5-e71d-4a1d-a3f0-7bba58fe3ae2
+added new show on 2015-07-26 09:08:22.363000
+Music on the Mountain, 2015-07-24T09:00:00, 748406c5-4f77-4029-b9e0-a54fa0253a16
+added new show on 2015-07-26 09:08:23.555000
+Alabama Sounds of Summer, 2015-07-24T09:00:00, ec07bd72-4f85-4058-a3d6-a6751f0841b9
+added new show on 2015-07-26 09:08:24.987000
+DCI North Alabama, 2015-07-23T09:00:00, 6667cad2-8498-4595-b441-2f355153f966
+added new show on 2015-07-26 09:08:25.885000
+DCI Mid-America, 2015-07-22T09:00:00, 0420baf0-6973-433d-9f47-0ccdcfa28f2d
+added new show on 2015-07-26 09:08:26.928000
+DCI Southern Mississippi, 2015-07-22T09:00:00, feaa4d86-4f7d-4203-8d6a-e9170fd95a2b
+added new show on 2015-07-26 09:08:27.817000
+DCI Arkansas, 2015-07-22T09:00:00, 46c40f54-2711-42a0-ac35-fe3977548841
+added new show on 2015-07-26 09:08:28.746000
+Drums of Summer, 2015-07-21T09:00:00, ee1e749f-0794-4bf5-82d7-119f4034d953
+added new show on 2015-07-26 09:08:29.827000
+Mississippi Sound Spectacular, 2015-07-21T09:00:00, cdb3ae2e-c38b-4bdf-8479-2287f991b199
+added new show on 2015-07-26 09:08:30.970000
+DCI Dallas presented by North Texas Festival of Drums and Bugles, 2015-07-20T09:00:00, f95aa1a3-578d-4311-8ec9-333b409760ff
+added new show on 2015-07-26 09:08:31.970000
+Drums Across Cajun Field, 2015-07-20T09:00:00, 309c6466-771d-43a0-b98a-5fceb4b3c634
+added new show on 2015-07-26 09:08:32.428000
+Fiesta De Musica, 2015-07-18T09:00:00, 4691ea20-c9d5-4aa2-b384-3caa5932d3d7
+added new show on 2015-07-26 09:08:34.863000
+DCI  Southwestern Championship presented by Fred J. Miller Inc., 2015-07-18T09:00:00, 52e8fb50-eedd-40ec-905a-9c53e51897be
+added new show on 2015-07-26 09:08:35.707000
+Tour of Champions - Texas presented by THE exSIGHTment OF SOUND, 2015-07-17T09:00:00, c79bcca7-961f-48ac-afb1-848de734edfe
+added new show on 2015-07-26 09:08:36.892000
+DCI Central Texas presented by Band Shoppe, 2015-07-16T09:00:00, 031e53fa-0c37-404d-b2aa-5b5819654468
+added new show on 2015-07-26 09:08:38.167000
+DCI Denton presented by The Cavaliers for Red River Thunder, 2015-07-16T09:00:00, 368e51e9-fb30-40f3-a580-616c8429bf76
+added new show on 2015-07-26 09:08:39.208000
+DCI in the Heartland, 2015-07-15T09:00:00, 09d95523-c495-4d72-b30c-61e751becdc6
+added new show on 2015-07-26 09:08:40.744000
+March of Champions presented by Drums Across Kansas, 2015-07-14T09:00:00, 89bc1b16-7058-4268-a9d3-cd6c6f582450
+added new show on 2015-07-26 09:08:41.976000
+Music on the Move, 2015-07-14T09:00:00, e66a5493-9edc-48d0-9e62-fa3d8742073a
+added new show on 2015-07-26 09:08:43.299000
+Drums Across Nebraska, 2015-07-13T09:00:00, 3a96d156-a822-4f30-9329-3e7107a19013
+added new show on 2015-07-26 09:08:44.128000
+Tour of Champions - Central Missouri, 2015-07-13T09:00:00, 8983e56c-9f13-44de-86cc-82bfd501b3b6
+added new show on 2015-07-31 21:16:14.275000
+Shoreman Brass Classic, 2015-07-31T09:00:00, 943aacdb-434e-4643-bb29-26589896fa21
+added new show on 2015-07-31 21:16:16.129000
+Tour of Champions: PPL Park, 2015-07-30T09:00:00, f66cb31d-8282-4b96-8619-1d76fb63576c
+added new show on 2015-07-31 21:16:17.321000
+CYO Nationals Tribute, 2015-07-30T09:00:00, b452ec11-a13f-4a07-b871-a9e332ee1af4
+added new show on 2015-07-31 21:16:18.334000
+A Blast in the Burg, 2015-07-30T09:00:00, 20fb97d9-3fea-4b44-bc90-fc3c3f5396ec
+added new show on 2015-07-31 21:16:19.212000
+Drums Along the Mohawk, 2015-07-29T09:00:00, df96a934-a4fc-4a61-8112-558362327210
+added new show on 2015-07-31 21:16:20.028000
+Drum Corps: An American Tradition, 2015-07-29T09:00:00, 83d03d20-7d27-409e-938d-b7e5f6f217ee
+added new show on 2015-07-31 21:16:21.123000
+Legends Drum Corps Open, 2015-07-28T09:00:00, 6a699f36-ed52-447f-9fc1-499c69cb6bb7
+added new show on 2015-07-31 21:16:22.043000
+Lake Erie Fanfare, 2015-07-28T09:00:00, d194b04d-1bb9-434a-a5ce-d52027b7facb
+added new show on 2015-07-31 21:16:22.758000
+WDBJ-7 Summer Music Games of Southwest Virginia, 2015-07-28T09:00:00, ea353789-8692-4dcf-9adb-f6c9f8bff98a
+added new show on 2015-07-31 21:16:23.411000
+Drums Across the Tri-State, 2015-07-27T09:00:00, fd39ae5a-e732-4e71-a252-4fcb53f9981f
+added new show on 2015-07-31 21:16:23.997000
+Show of Shows, 2015-07-27T09:00:00, da1bd45d-2525-484e-a662-5dc60df42f7c
+added new show on 2015-07-31 21:16:24.622000
+Tournament Of Drums, 2015-07-27T09:00:00, bc1adff7-e2fe-4a6e-be34-66c67e64ab64
+added new show on 2015-07-31 21:16:25.239000
+Emerald City Music Games, 2015-07-27T09:00:00, a0e8bfca-a8bc-4038-8941-7125f6966435
+added new show on 2015-07-31 21:16:25.944000
+NightBEAT Tour of Champions, 2015-07-26T09:00:00, 503c17a6-1a17-4447-8e15-1ab5b3043fce
+added new show on 2015-07-31 21:16:28.893000
+DCI Atlanta Southeastern Championship, 2015-07-25T09:00:00, bb03aee7-e890-4314-98d7-a72ed2f72038
+added new show on 2015-07-31 21:17:03.300000
+Shoreman Brass Classic, 2015-07-31T09:00:00, 943aacdb-434e-4643-bb29-26589896fa21
