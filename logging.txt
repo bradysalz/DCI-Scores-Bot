@@ -735,3 +735,9 @@ added new show on 2015-07-31 21:16:28.893000
 DCI Atlanta Southeastern Championship, 2015-07-25T09:00:00, bb03aee7-e890-4314-98d7-a72ed2f72038
 added new show on 2015-07-31 21:17:03.300000
 Shoreman Brass Classic, 2015-07-31T09:00:00, 943aacdb-434e-4643-bb29-26589896fa21
+added new show on 2015-07-31 22:40:56.967000
+DCI Eastern Classic, 2015-07-31T09:00:00, 5322ef43-8914-4ffc-b285-160da94c081e
+added new show on 2015-07-31 22:43:45.237000
+DCI Eastern Classic, 2015-07-31T09:00:00, 5322ef43-8914-4ffc-b285-160da94c081e
+added new show on 2015-07-31 22:43:46.613000
+A Knight of Music and Motion, 2015-07-31T09:00:00, d92d4811-5b67-40f8-b41f-1b0a6993bdae

@@ -28,7 +28,7 @@ class ListManager:
             if show not in post_list:
                 curr_show = show.split(', ')
                 crawler = WebCrawler()
-                bot = RedditBot('drumcorps')
+                bot = RedditBot('dcibottest')
 
                 recaps = crawler.get_show_recap_url(curr_show[2])
                 shows = [crawler.parse_recap_table(r) for r in recaps]
@@ -46,7 +46,7 @@ class ListManager:
                 time_str = strftime('%m/%d/%y', time_obj)
                 post_title = time_str + ' Scores: ' + curr_show[0]
 
-                bot.post_thread(post_title, single_body)
+                # bot.post_thread(post_title, single_body)
 
                 with open('logging.txt', 'ab') as log:
                     print 'new show ' + curr_show[0]

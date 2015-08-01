@@ -37,28 +37,29 @@ class RedditBot():
             "*Hope you enjoy!*")
 
     def parse_show_to_post(self, show):
-        text = ''
-        # print show['categories']
-        temp_row = [r for r in show['categories'] if r != u'\n\n']
-        temp_row.insert(0, '|' + show['class'])
-        if 'Total' not in temp_row:
-            temp_row.append('Total')
-        text += self._shorten_caption_names(self.append_row(temp_row))
+        ## removed all of this, got too big for reddit table
+        # text = ''
+        # temp_row = [r for r in show['categories'] if r != u'\n\n']
+        # temp_row.insert(0, '|' + show['class'])
+        # if 'Total' not in temp_row:
+        #     temp_row.append('Total')
+        # text += self._shorten_caption_names(self.append_row(temp_row))
+        #
+        # col_cnt = len(temp_row)
+        # temp_row = ''
+        # for i in xrange(col_cnt):
+        #     temp_row += '--|'
+        # text += temp_row + '\n'
+        #
+        # temp_row = [j for j in show['judges'] if j != '\n\n']
+        # temp_row.insert(0, '|Judges')
+        # text += self.append_row(temp_row)
 
-        col_cnt = len(temp_row)
-        temp_row = ''
-        for i in xrange(col_cnt):
-            temp_row += '--|'
-        text += temp_row + '\n'
-
-        temp_row = [j for j in show['judges'] if j != '\n\n']
-        temp_row.insert(0, '|Judges')
-        text += self.append_row(temp_row)
-
+        text = show['class'] + '|Score\n--|--\n'
         for i in xrange(len(show['corps'])):
             temp_row = show['corps'][i] + '|'
-            temp_row += '|'.join(show['subcaptions'][i])
-            temp_row += '|' + '**' + show['totals'][i] + '**'
+            # temp_row += '|'.join(show['subcaptions'][i])
+            temp_row += '**' + show['totals'][i] + '**'
             temp_row += '\n'
             text += temp_row
 
