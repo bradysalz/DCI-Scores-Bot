@@ -741,3 +741,9 @@ added new show on 2015-07-31 22:43:45.237000
 DCI Eastern Classic, 2015-07-31T09:00:00, 5322ef43-8914-4ffc-b285-160da94c081e
 added new show on 2015-07-31 22:43:46.613000
 A Knight of Music and Motion, 2015-07-31T09:00:00, d92d4811-5b67-40f8-b41f-1b0a6993bdae
+added new show on 2015-08-01 21:44:51.471000
+Legends Drum Corps Invitational, 2015-08-01T09:00:00, 01d847c2-385d-4c3d-9da0-f47605d859be
+added new show on 2015-08-01 21:45:30.371000
+Legends Drum Corps Invitational, 2015-08-01T09:00:00, 01d847c2-385d-4c3d-9da0-f47605d859be
+added new show on 2016-06-24 19:29:10.840000
+DCI Tour Premiere presented by French Lick Resort, 2016-06-23T20:30:00, d5838aee-6f19-4481-8541-241ea09b4212

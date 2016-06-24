@@ -36,6 +36,33 @@ class RedditBot():
             "\n\n"
             "*Hope you enjoy!*")
 
+
+    def parse_show_to_post_2016(self, show):
+        # redone for new show format in 2016
+        body_text = ''
+
+        # header row
+        body_text += '\n CORPS |' + ' | '.join(show['categories']) + '\n'
+
+        # alignment
+        body_text += ':--|' + '|'.join([':--' for _ in show['corps']]) + '\n'
+
+        # row for each corps
+        for cnt, corps in enumerate(show['corps']):
+            captions = show['captions']
+            row = corps + ' | '
+            row += '|'.join(captions[4*cnt : 4*cnt+3])
+            row += '|' + show['penalties'][cnt]
+            row += '|' + show['totals'][cnt] + '\n'
+            body_text += row
+
+        body_text += '\n\nFull recap available [here]({0})\n\n'.format(show['url'])
+        body_text += '\n'
+
+        return body_text
+
+
+
     def parse_show_to_post(self, show):
         ## removed all of this, got too big for reddit table
         # text = ''

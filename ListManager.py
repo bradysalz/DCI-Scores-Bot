@@ -1,8 +1,8 @@
 from datetime import datetime
 from time import strptime, strftime
 
-from WebCrawler import WebCrawler
 from RedditBot import RedditBot
+from WebCrawler import WebCrawler
 
 
 class ListManager:
@@ -31,8 +31,8 @@ class ListManager:
                 bot = RedditBot('dcibottest')
 
                 recaps = crawler.get_show_recap_url(curr_show[2])
-                shows = [crawler.parse_recap_table(r) for r in recaps]
-                bodies = [bot.parse_show_to_post(s) for s in shows]
+                shows = [crawler.parse_recap_table_2016(r) for r in recaps]
+                bodies = [bot.parse_show_to_post_2016(s) for s in shows]
 
                 single_body = bot.get_header(shows[0])
                 single_body += '\n\n'.join(bodies)
