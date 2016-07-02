@@ -46,7 +46,7 @@ class ListManager:
                 time_str = strftime('%m/%d/%y', time_obj)
                 post_title = time_str + ' Scores: ' + curr_show[0]
 
-                # bot.post_thread(post_title, single_body)
+#                bot.post_thread(post_title, single_body)
 
                 with open('logging.txt', 'ab') as log:
                     print 'new show ' + curr_show[0]

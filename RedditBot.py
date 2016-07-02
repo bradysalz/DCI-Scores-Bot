@@ -45,7 +45,7 @@ class RedditBot():
         body_text += '\n CORPS |' + ' | '.join(show['categories']) + '\n'
 
         # alignment
-        body_text += ':--|' + '|'.join([':--' for _ in show['corps']]) + '\n'
+        body_text += ':--|' + '|'.join([':--' for _ in show['categories']]) + '\n'
 
         # row for each corps
         for cnt, corps in enumerate(show['corps']):

@@ -747,3 +747,25 @@ added new show on 2015-08-01 21:45:30.371000
 Legends Drum Corps Invitational, 2015-08-01T09:00:00, 01d847c2-385d-4c3d-9da0-f47605d859be
 added new show on 2016-06-24 19:29:10.840000
 DCI Tour Premiere presented by French Lick Resort, 2016-06-23T20:30:00, d5838aee-6f19-4481-8541-241ea09b4212
+added new show on 2016-06-24 19:39:02.970138
+DCI Tour Premiere presented by French Lick Resort, 2016-06-23T20:30:00, d5838aee-6f19-4481-8541-241ea09b4212
+added new show on 2016-06-25 12:47:28.945381
+MidCal Champions Showcase, 2016-06-24T00:00:00, de52a690-f276-48f0-9618-b4cd4e0f9398
+added new show on 2016-07-02 13:05:35.282921
+Drum Corps: An American Tradition, 2016-07-01T00:00:00, bde3f9e2-07bd-44db-9b44-103fe88e31bd
+added new show on 2016-07-02 13:16:05.833913
+Drum Corps: An American Tradition, 2016-07-01T00:00:00, bde3f9e2-07bd-44db-9b44-103fe88e31bd
+added new show on 2016-07-02 13:26:05.913100
+Drum Corps: An American Tradition, 2016-07-01T00:00:00, bde3f9e2-07bd-44db-9b44-103fe88e31bd
+added new show on 2016-07-02 13:28:24.304086
+Drum Corps: An American Tradition, 2016-07-01T00:00:00, bde3f9e2-07bd-44db-9b44-103fe88e31bd
+added new show on 2016-07-02 13:28:24.773512
+Corps at the Crest San Diego, 2016-07-01T00:00:00, 63f9ad2b-367d-4e41-bee1-26c0a8d73503
+added new show on 2016-07-02 13:28:25.027260
+Seattle Summer Music Games, 2016-07-01T00:00:00, 61d0e387-d409-4a3d-aec7-4637227aea04
+added new show on 2016-07-02 13:28:25.393382
+DCI Central Indiana, 2016-07-01T00:00:00, f13599b0-b436-48e7-92b0-68eea7b90fc7
+added new show on 2016-07-02 13:28:25.581146
+Drum Corps: An American Tradition, 2016-06-30T19:00:00, 2ec1ff32-066c-438e-a7a7-1bad906c5a2a
+added new show on 2016-07-02 13:28:26.249214
+Drums on the Ohio, 2016-06-29T00:00:00, e9b0a779-1210-4e80-8372-72fbd8cb6cac
